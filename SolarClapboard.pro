@@ -1,4 +1,4 @@
-update=10/28/2017 3:56:16 PM
+update=11/2/2017 1:49:48 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -166,3 +156,13 @@ LibName124=C:/Program Files/KiCad/share/kicad/library/ltc3588-cache
 LibName125=C:/Program Files/KiCad/share/kicad/library/hmc5883l
 LibName126=C:/Program Files/KiCad/share/kicad/library/teensy32_epaper
 LibName127=C:/Program Files/KiCad/share/kicad/library/EPD215
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
