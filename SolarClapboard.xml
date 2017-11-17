@@ -1,0 +1,1727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>H:/SolarPoweredHomeMonitor/SolarClapboard/SolarClapboard.sch</source>
+    <date>11/6/2017 9:57:38 AM</date>
+    <tool>Eeschema 4.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>SolarClapboard.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Epaper_adapter_sheet/" tstamps="/59C3E829/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Epaper_adapter.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U3">
+      <value>MPL3115A2</value>
+      <footprint>CustomFootprints:LGA-8_3x5mm_Pitch1.25mm_handsolder</footprint>
+      <fields>
+        <field name="Field4">PressureSensor</field>
+      </fields>
+      <libsource lib="mpl3115a2" part="MPL3115A2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5984E869</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>HIH6130-I2C</value>
+      <footprint>Housings_SOIC:SO-8_5.3x6.2mm_Pitch1.27mm</footprint>
+      <datasheet>DOCUMENTATION</datasheet>
+      <fields>
+        <field name="Field4">Humidity</field>
+      </fields>
+      <libsource lib="HIH6130-I2C" part="HIH6130-I2C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5984E94F</tstamp>
+    </comp>
+    <comp ref="SC1">
+      <value>Solar_Cell</value>
+      <footprint>CustomFootprints:MONO_SOLAR_CELL_22MMx7MM_KXOB22-04X3F</footprint>
+      <datasheet>IXYS SLMD480H12L</datasheet>
+      <fields>
+        <field name="Max_Voltage">1.89V</field>
+        <field name="Max_Current">15mA</field>
+        <field name="MFG_PN">KXOB22-04X3F</field>
+      </fields>
+      <libsource lib="device" part="Solar_Cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5984F189</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>Teensy3.2</value>
+      <footprint>CustomFootprints:Teensy_Header_Straight_2x14_Pitch2.54mm</footprint>
+      <libsource lib="teensy32_epaper" part="Teensy3.2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59936DF3</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MCP73871</value>
+      <footprint>Housings_DFN_QFN:QFN-20-1EP_4x4mm_Pitch0.5mm</footprint>
+      <libsource lib="SolarClapboard-rescue" part="MCP73871-RESCUE-SolarClapboard"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A889EF</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery_Cell</value>
+      <footprint>Connectors_JST:JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled</footprint>
+      <libsource lib="device" part="Battery_Cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B1C60D</tstamp>
+    </comp>
+    <comp ref="TH1">
+      <value>Thermistor_NTC 10k</value>
+      <footprint>Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical</footprint>
+      <libsource lib="device" part="Thermistor_NTC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B1CC8B</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100uF</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="CP1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59B1D8FC</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>6.5V</value>
+      <footprint>Diodes_SMD:D_SOD-323_HandSoldering</footprint>
+      <fields>
+        <field name="MFG_PN">DDZ6V8ASF-7</field>
+      </fields>
+      <libsource lib="device" part="D_Zener_Small_ALT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C2F501</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>1M</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C316F2</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>188k</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C31759</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10uF</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C3E1F6</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>Schottky</value>
+      <footprint>Diodes_SMD:D_SOD-323_HandSoldering</footprint>
+      <fields>
+        <field name="MFG_PN">CUS08F30,H3F</field>
+      </fields>
+      <libsource lib="device" part="D_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C3F577</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <fields>
+        <field name="DNP">DNP</field>
+      </fields>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C56EB6</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C57249</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10uF</value>
+      <footprint>Capacitors_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C5764F</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C5770F</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C5906B</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C59CAC</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C99B5E</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.22uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C99C44</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LT3011</value>
+      <footprint>Housings_SSOP:MSOP-12_3x4mm_Pitch0.65mm</footprint>
+      <libsource lib="linear" part="LT3011"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CA657C</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1nF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CA806A</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CA818D</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CA826D</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>332k 1%</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CA8B2D</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>200k 1%</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CA8C65</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>2k</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CBF5B0</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CBF795</tstamp>
+    </comp>
+    <comp ref="TP14">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CC11A4</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59CC62CF</tstamp>
+    </comp>
+    <comp ref="J15">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E100A5</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E1B282</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E1BB03</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E2EA65</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E2EB7F</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E2ECC0</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E337A4</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E338B5</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E33995</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E33A76</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E35BFB</tstamp>
+    </comp>
+    <comp ref="J13">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E360A6</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E36754</tstamp>
+    </comp>
+    <comp ref="TP13">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E3DD12</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E407F4</tstamp>
+    </comp>
+    <comp ref="SC2">
+      <value>Solar_Cell</value>
+      <footprint>CustomFootprints:MONO_SOLAR_CELL_22MMx7MM_KXOB22-04X3F</footprint>
+      <datasheet>IXYS SLMD480H12L</datasheet>
+      <fields>
+        <field name="Max_Voltage">1.89V</field>
+        <field name="Max_Current">15mA</field>
+        <field name="MFG_PN">KXOB22-04X3F</field>
+      </fields>
+      <libsource lib="device" part="Solar_Cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E83455</tstamp>
+    </comp>
+    <comp ref="SC3">
+      <value>Solar_Cell</value>
+      <footprint>CustomFootprints:MONO_SOLAR_CELL_22MMx7MM_KXOB22-04X3F</footprint>
+      <datasheet>IXYS SLMD480H12L</datasheet>
+      <fields>
+        <field name="Max_Voltage">1.89V</field>
+        <field name="Max_Current">15mA</field>
+        <field name="MFG_PN">KXOB22-04X3F</field>
+      </fields>
+      <libsource lib="device" part="Solar_Cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E83541</tstamp>
+    </comp>
+    <comp ref="SC4">
+      <value>Solar_Cell</value>
+      <footprint>CustomFootprints:MONO_SOLAR_CELL_22MMx7MM_KXOB22-04X3F</footprint>
+      <datasheet>IXYS SLMD480H12L</datasheet>
+      <fields>
+        <field name="Max_Voltage">1.89V</field>
+        <field name="Max_Current">15mA</field>
+        <field name="MFG_PN">KXOB22-04X3F</field>
+      </fields>
+      <libsource lib="device" part="Solar_Cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E83658</tstamp>
+    </comp>
+    <comp ref="SC5">
+      <value>Solar_Cell</value>
+      <footprint>CustomFootprints:MONO_SOLAR_CELL_22MMx7MM_KXOB22-04X3F</footprint>
+      <datasheet>IXYS SLMD480H12L</datasheet>
+      <fields>
+        <field name="Max_Voltage">1.89V</field>
+        <field name="Max_Current">15mA</field>
+        <field name="MFG_PN">KXOB22-04X3F</field>
+      </fields>
+      <libsource lib="device" part="Solar_Cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E83756</tstamp>
+    </comp>
+    <comp ref="SC6">
+      <value>Solar_Cell</value>
+      <footprint>CustomFootprints:MONO_SOLAR_CELL_22MMx7MM_KXOB22-04X3F</footprint>
+      <datasheet>IXYS SLMD480H12L</datasheet>
+      <fields>
+        <field name="Max_Voltage">1.89V</field>
+        <field name="Max_Current">15mA</field>
+        <field name="MFG_PN">KXOB22-04X3F</field>
+      </fields>
+      <libsource lib="device" part="Solar_Cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E83863</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E83C0D</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E8A0B6</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E9359B</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E936CA</tstamp>
+    </comp>
+    <comp ref="TP12">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <fields>
+        <field name="DNP">DNP</field>
+      </fields>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E988EE</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E9C937</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59E9CA8C</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EA92BD</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1M</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59EBD109</tstamp>
+    </comp>
+    <comp ref="J16">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F916DE</tstamp>
+    </comp>
+    <comp ref="J18">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F936BB</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F96B1F</tstamp>
+    </comp>
+    <comp ref="J14">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F98B84</tstamp>
+    </comp>
+    <comp ref="J17">
+      <value>TEST_2P</value>
+      <footprint>Measurement_Points:Test_Point_2Pads</footprint>
+      <libsource lib="conn" part="TEST_2P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59F9F692</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FBF0E8</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FBF24E</tstamp>
+    </comp>
+    <comp ref="J19">
+      <value>Z5263CT-ND</value>
+      <footprint>CustomFootprints:FPC_34</footprint>
+      <libsource lib="conn" part="CONN_01X34"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C3EB0D</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">25V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C4291C</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>47uH</value>
+      <footprint>Inductors_SMD:L_Coilcraft_XAL5030</footprint>
+      <fields>
+        <field name="Current">800mA</field>
+      </fields>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C42B41</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>2.2uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C42C29</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>MBR0530</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <libsource lib="diode" part="MBR0530"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C42D63</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>MBR0530</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <libsource lib="diode" part="MBR0530"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C42DD6</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>MBR0530</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <libsource lib="diode" part="MBR0530"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C42E25</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C42E6A</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C42EC1</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>AO3418</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="device" part="Q_NMOS_GDS"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C43D37</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>2.2R 1%</value>
+      <footprint>Resistors_SMD:R_1206_HandSoldering</footprint>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C44064</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">25V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C44AA9</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">25V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C44B40</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">25V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C44B8C</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">25V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C44BDF</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">25V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C44C2D</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage">25V</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59C44C7C</tstamp>
+    </comp>
+    <comp ref="TP22">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59CC61A6</tstamp>
+    </comp>
+    <comp ref="TP20">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E046D1</tstamp>
+    </comp>
+    <comp ref="TP21">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E0474B</tstamp>
+    </comp>
+    <comp ref="TP23">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E04A7A</tstamp>
+    </comp>
+    <comp ref="TP25">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E04AD0</tstamp>
+    </comp>
+    <comp ref="TP26">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E04B2D</tstamp>
+    </comp>
+    <comp ref="TP27">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E05B20</tstamp>
+    </comp>
+    <comp ref="TP17">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E4F023</tstamp>
+    </comp>
+    <comp ref="TP15">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E8F351</tstamp>
+    </comp>
+    <comp ref="TP16">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E8F46C</tstamp>
+    </comp>
+    <comp ref="TP18">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E8F4DC</tstamp>
+    </comp>
+    <comp ref="TP19">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59E8F569</tstamp>
+    </comp>
+    <comp ref="TP24">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59EAAE72</tstamp>
+    </comp>
+    <comp ref="TP28">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59F570F7</tstamp>
+    </comp>
+    <comp ref="TP29">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59F571F7</tstamp>
+    </comp>
+    <comp ref="TP30">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59F57276</tstamp>
+    </comp>
+    <comp ref="TP31">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59F572F8</tstamp>
+    </comp>
+    <comp ref="TP32">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59F5737D</tstamp>
+    </comp>
+    <comp ref="TP33">
+      <value>TEST_1P</value>
+      <footprint>CustomFootprints:TestPointHole</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/Epaper_adapter_sheet/" tstamps="/59C3E829/"/>
+      <tstamp>59F57403</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="diode" part="BAT48ZFILM">
+      <aliases>
+        <alias>MBR0520LT</alias>
+        <alias>MBR0520</alias>
+        <alias>MBR0530</alias>
+        <alias>MBR0540</alias>
+        <alias>MBR0550</alias>
+        <alias>MBR0560</alias>
+        <alias>MBR0570</alias>
+        <alias>MBR0580</alias>
+        <alias>BAT42W-V</alias>
+        <alias>BAT43W-V</alias>
+      </aliases>
+      <description>40V 0.35A Small Signal Schottky Diode, SOD-123</description>
+      <docs>http://www.st.com/content/ccc/resource/technical/document/datasheet/b2/2f/2a/0c/8b/b5/46/a3/CD00130229.pdf/files/CD00130229.pdf/jcr:content/translations/en.CD00130229.pdf</docs>
+      <footprints>
+        <fp>D*SOD?123*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">BAT48ZFILM</field>
+        <field name="Footprint">Diodes_SMD:SOD-123</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Battery_Cell">
+      <description>single battery cell</description>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X34">
+      <description>Connector, single row, 01x34, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X34</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+        <pin num="21" name="P21" type="passive"/>
+        <pin num="22" name="P22" type="passive"/>
+        <pin num="23" name="P23" type="passive"/>
+        <pin num="24" name="P24" type="passive"/>
+        <pin num="25" name="P25" type="passive"/>
+        <pin num="26" name="P26" type="passive"/>
+        <pin num="27" name="P27" type="passive"/>
+        <pin num="28" name="P28" type="passive"/>
+        <pin num="29" name="P29" type="passive"/>
+        <pin num="30" name="P30" type="passive"/>
+        <pin num="31" name="P31" type="passive"/>
+        <pin num="32" name="P32" type="passive"/>
+        <pin num="33" name="P33" type="passive"/>
+        <pin num="34" name="P34" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP1">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C_Small">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Small">
+      <description>Diode, small symbol</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Zener_Small_ALT">
+      <description>Zener Diode, small symbol, alternativ symbol</description>
+      <docs>https://en.wikipedia.org/wiki/Zener_diode</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener_Small_ALT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="HIH6130-I2C" part="HIH6130-I2C">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HIH6130-I2C</field>
+        <field name="Footprint">MODULE</field>
+        <field name="Datasheet">DOCUMENTATION</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vcore" type="input"/>
+        <pin num="2" name="Vss" type="input"/>
+        <pin num="3" name="SCL" type="input"/>
+        <pin num="4" name="SDA" type="input"/>
+        <pin num="5" name="AL_H" type="input"/>
+        <pin num="6" name="AL_L" type="input"/>
+        <pin num="7" name="NC" type="input"/>
+        <pin num="8" name="Vdd" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="linear" part="LT3011">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LT3011</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="NotConnected"/>
+        <pin num="2" name="OUT" type="output"/>
+        <pin num="3" name="ADJ" type="BiDi"/>
+        <pin num="4" name="GND" type="power_out"/>
+        <pin num="5" name="NC" type="NotConnected"/>
+        <pin num="6" name="PWRGD" type="openCol"/>
+        <pin num="7" name="CT" type="BiDi"/>
+        <pin num="8" name="NC" type="NotConnected"/>
+        <pin num="9" name="~SHDN" type="openCol"/>
+        <pin num="10" name="NC" type="NotConnected"/>
+        <pin num="11" name="IN" type="power_in"/>
+        <pin num="12" name="NC" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="SolarClapboard-rescue" part="MCP73871-RESCUE-SolarClapboard">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73871-RESCUE-SolarClapboard</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="power_out"/>
+        <pin num="2" name="VPCC" type="power_in"/>
+        <pin num="3" name="SEL" type="input"/>
+        <pin num="4" name="PROG2" type="input"/>
+        <pin num="5" name="THERM" type="input"/>
+        <pin num="6" name="~PG" type="input"/>
+        <pin num="7" name="STAT2" type="input"/>
+        <pin num="8" name="STAT1/~LBO" type="input"/>
+        <pin num="9" name="~TE" type="input"/>
+        <pin num="10" name="VSS" type="power_out"/>
+        <pin num="11" name="VSS" type="power_out"/>
+        <pin num="12" name="PROG3" type="input"/>
+        <pin num="13" name="PROG1" type="input"/>
+        <pin num="14" name="VBAT" type="power_out"/>
+        <pin num="15" name="VBAT" type="power_out"/>
+        <pin num="16" name="VBAT" type="power_out"/>
+        <pin num="17" name="CE" type="input"/>
+        <pin num="18" name="IN" type="power_in"/>
+        <pin num="19" name="IN" type="power_in"/>
+        <pin num="20" name="OUT" type="power_out"/>
+        <pin num="21" name="VSS" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="mpl3115a2" part="MPL3115A2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MPL3115A2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="CAP" type="passive"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VDDIO" type="power_in"/>
+        <pin num="5" name="INT2" type="output"/>
+        <pin num="6" name="INT1" type="output"/>
+        <pin num="7" name="SDA" type="openCol"/>
+        <pin num="8" name="SCL" type="openCol"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Q_NMOS_GDS">
+      <description>Transistor N-MOSFET with substrate diode (general)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Solar_Cell">
+      <description>single solar cell</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SC</field>
+        <field name="Value">Solar_Cell</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="TEST_1P">
+      <description>point</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TEST_1P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="TEST_2P">
+      <description>point</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TEST_2P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="teensy32_epaper" part="Teensy3.2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Teensy3.2</field>
+      </fields>
+      <pins>
+        <pin num="0" name="0" type="BiDi"/>
+        <pin num="1" name="1" type="BiDi"/>
+        <pin num="2" name="2" type="BiDi"/>
+        <pin num="3" name="3" type="BiDi"/>
+        <pin num="4" name="4" type="BiDi"/>
+        <pin num="5" name="5" type="BiDi"/>
+        <pin num="6" name="6" type="BiDi"/>
+        <pin num="7" name="7" type="BiDi"/>
+        <pin num="8" name="8" type="BiDi"/>
+        <pin num="9" name="9" type="BiDi"/>
+        <pin num="10" name="10" type="BiDi"/>
+        <pin num="11" name="DOUT/MOSI" type="BiDi"/>
+        <pin num="12" name="CMP" type="BiDi"/>
+        <pin num="13" name="SCK(epaper)" type="input"/>
+        <pin num="14" name="BUSY(epaper)" type="input"/>
+        <pin num="15" name="RESET(epaper)" type="input"/>
+        <pin num="16" name="D/C(epaper)" type="input"/>
+        <pin num="17" name="CS(epaper)" type="input"/>
+        <pin num="18" name="SDA" type="input"/>
+        <pin num="19" name="SCL" type="input"/>
+        <pin num="20" name="A6" type="input"/>
+        <pin num="21" name="A7" type="input"/>
+        <pin num="22" name="A8" type="input"/>
+        <pin num="23" name="A9" type="input"/>
+        <pin num="3V3" name="3.3V" type="power_in"/>
+        <pin num="AGND" name="AGND" type="power_out"/>
+        <pin num="GND" name="GND" type="power_out"/>
+        <pin num="Vin" name="Vin" type="power_in"/>
+        <pin num="~" name="VBat" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Thermistor_NTC">
+      <description>temperature dependent resistor, negative temperature coefficient (NTC)</description>
+      <footprints>
+        <fp>*NTC*</fp>
+        <fp>*Thermistor*</fp>
+        <fp>PIN?ARRAY*</fp>
+        <fp>bornier*</fp>
+        <fp>*Terminal?Block*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TH</field>
+        <field name="Value">Thermistor_NTC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SolarClapboard-rescue">
+      <uri>H:\SolarPoweredHomeMonitor\SolarClapboard\SolarClapboard-rescue.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="linear">
+      <uri>C:\Program Files\KiCad\share\kicad\library\linear.lib</uri>
+    </library>
+    <library logical="diode">
+      <uri>C:\Program Files\KiCad\share\kicad\library\diode.lib</uri>
+    </library>
+    <library logical="mpl3115a2">
+      <uri>C:\Program Files\KiCad\share\kicad\library\mpl3115a2.lib</uri>
+    </library>
+    <library logical="HIH6130-I2C">
+      <uri>C:\Program Files\KiCad\share\kicad\library\HIH6130-I2C.lib</uri>
+    </library>
+    <library logical="teensy32_epaper">
+      <uri>C:\Program Files\KiCad\share\kicad\library\teensy32_epaper.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C5-Pad1)">
+      <node ref="U2" pin="7"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C4" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="R9" pin="2"/>
+      <node ref="TH1" pin="2"/>
+      <node ref="U1" pin="21"/>
+      <node ref="J9" pin="2"/>
+      <node ref="SC6" pin="2"/>
+      <node ref="U1" pin="11"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U3" pin="3"/>
+      <node ref="U5" pin="GND"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="J19" pin="22"/>
+      <node ref="J19" pin="13"/>
+      <node ref="R10" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="D5" pin="1"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="TP27" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U2" pin="4"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C6" pin="2"/>
+    </net>
+    <net code="3" name="Net-(J13-Pad1)">
+      <node ref="R8" pin="1"/>
+      <node ref="J13" pin="1"/>
+    </net>
+    <net code="4" name="Net-(J11-Pad1)">
+      <node ref="J11" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="5" name="Net-(J15-Pad1)">
+      <node ref="J15" pin="1"/>
+      <node ref="U5" pin="3V3"/>
+    </net>
+    <net code="6" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="7" name="/PROG3">
+      <node ref="TP8" pin="1"/>
+      <node ref="U1" pin="12"/>
+      <node ref="J13" pin="2"/>
+    </net>
+    <net code="8" name="/PROG1">
+      <node ref="J11" pin="2"/>
+      <node ref="U1" pin="13"/>
+      <node ref="TP7" pin="1"/>
+    </net>
+    <net code="9" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="10" name="/SDA">
+      <node ref="U4" pin="4"/>
+      <node ref="U3" pin="7"/>
+      <node ref="J18" pin="2"/>
+      <node ref="TP9" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="11" name="/SCL">
+      <node ref="J16" pin="2"/>
+      <node ref="U4" pin="3"/>
+      <node ref="TP10" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="12" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="13" name="Net-(U2-Pad12)">
+      <node ref="U2" pin="12"/>
+    </net>
+    <net code="14" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10"/>
+    </net>
+    <net code="15" name="Net-(U2-Pad8)">
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="16" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="17" name="Net-(SC5-Pad2)">
+      <node ref="SC6" pin="1"/>
+      <node ref="SC5" pin="2"/>
+    </net>
+    <net code="18" name="Net-(J9-Pad1)">
+      <node ref="J9" pin="1"/>
+      <node ref="SC5" pin="1"/>
+      <node ref="SC4" pin="2"/>
+    </net>
+    <net code="19" name="Net-(SC2-Pad2)">
+      <node ref="SC3" pin="1"/>
+      <node ref="SC2" pin="2"/>
+    </net>
+    <net code="20" name="Net-(SC1-Pad2)">
+      <node ref="SC2" pin="1"/>
+      <node ref="SC1" pin="2"/>
+    </net>
+    <net code="21" name="Net-(J12-Pad2)">
+      <node ref="R7" pin="1"/>
+      <node ref="J12" pin="2"/>
+    </net>
+    <net code="22" name="/VBat">
+      <node ref="R1" pin="1"/>
+      <node ref="U2" pin="11"/>
+      <node ref="J3" pin="2"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="23" name="/~SHDN">
+      <node ref="U2" pin="9"/>
+      <node ref="TP6" pin="1"/>
+    </net>
+    <net code="24" name="/PWRGD">
+      <node ref="R1" pin="2"/>
+      <node ref="TP4" pin="1"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="25" name="Net-(TP12-Pad1)">
+      <node ref="U3" pin="5"/>
+      <node ref="TP12" pin="1"/>
+    </net>
+    <net code="26" name="Net-(J18-Pad1)">
+      <node ref="U5" pin="18"/>
+      <node ref="J18" pin="1"/>
+    </net>
+    <net code="27" name="Net-(J17-Pad2)">
+      <node ref="J17" pin="2"/>
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="28" name="Net-(C11-Pad1)">
+      <node ref="C11" pin="1"/>
+      <node ref="J14" pin="2"/>
+      <node ref="U4" pin="8"/>
+    </net>
+    <net code="29" name="Net-(J16-Pad1)">
+      <node ref="J16" pin="1"/>
+      <node ref="U5" pin="19"/>
+    </net>
+    <net code="30" name="Net-(U5-Pad0)">
+      <node ref="U5" pin="0"/>
+    </net>
+    <net code="31" name="Net-(R2-Pad2)">
+      <node ref="U2" pin="3"/>
+      <node ref="TP5" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="32" name="Net-(D1-Pad2)">
+      <node ref="J1" pin="2"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="33" name="Net-(J8-Pad2)">
+      <node ref="J8" pin="2"/>
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="34" name="Net-(C3-Pad1)">
+      <node ref="U1" pin="18"/>
+      <node ref="U1" pin="19"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="J7" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="35" name="Net-(J7-Pad2)">
+      <node ref="U1" pin="9"/>
+      <node ref="J7" pin="2"/>
+    </net>
+    <net code="36" name="Net-(J6-Pad2)">
+      <node ref="U1" pin="4"/>
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="37" name="Net-(J5-Pad2)">
+      <node ref="J5" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="38" name="Net-(SC3-Pad2)">
+      <node ref="SC3" pin="2"/>
+      <node ref="SC4" pin="1"/>
+    </net>
+    <net code="39" name="Net-(C9-Pad1)">
+      <node ref="C9" pin="1"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="40" name="Net-(U5-Pad4)">
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="41" name="Net-(U5-Pad20)">
+      <node ref="U5" pin="20"/>
+    </net>
+    <net code="42" name="Net-(U5-Pad21)">
+      <node ref="U5" pin="21"/>
+    </net>
+    <net code="43" name="Net-(U5-Pad23)">
+      <node ref="U5" pin="23"/>
+    </net>
+    <net code="44" name="Net-(U5-PadAGND)">
+      <node ref="U5" pin="AGND"/>
+    </net>
+    <net code="45" name="Net-(U5-PadVin)">
+      <node ref="U5" pin="Vin"/>
+    </net>
+    <net code="46" name="Net-(U5-Pad1)">
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="47" name="Net-(U5-Pad2)">
+      <node ref="U5" pin="2"/>
+    </net>
+    <net code="48" name="Net-(U5-Pad3)">
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="49" name="Net-(U5-Pad6)">
+      <node ref="U5" pin="6"/>
+    </net>
+    <net code="50" name="Net-(U5-Pad8)">
+      <node ref="U5" pin="8"/>
+    </net>
+    <net code="51" name="Net-(U5-Pad9)">
+      <node ref="U5" pin="9"/>
+    </net>
+    <net code="52" name="Net-(U5-Pad10)">
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="54" name="Net-(U5-Pad~)">
+      <node ref="U5" pin="~"/>
+    </net>
+    <net code="55" name="Net-(U5-Pad~)">
+      <node ref="U5" pin="~"/>
+    </net>
+    <net code="56" name="Net-(U5-Pad~)">
+      <node ref="U5" pin="~"/>
+    </net>
+    <net code="57" name="Net-(U5-Pad~)">
+      <node ref="U5" pin="~"/>
+    </net>
+    <net code="58" name="/PV_ADC">
+      <node ref="R9" pin="1"/>
+      <node ref="TP13" pin="1"/>
+      <node ref="R7" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U5" pin="22"/>
+    </net>
+    <net code="59" name="/MOSI">
+      <node ref="J19" pin="19"/>
+      <node ref="TP26" pin="1"/>
+      <node ref="J17" pin="1"/>
+    </net>
+    <net code="60" name="Net-(U5-Pad5)">
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="61" name="Net-(U5-Pad12)">
+      <node ref="U5" pin="12"/>
+    </net>
+    <net code="62" name="Net-(U4-Pad5)">
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="63" name="Net-(U4-Pad6)">
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="64" name="Net-(U4-Pad7)">
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="65" name="/PGOOD">
+      <node ref="U1" pin="6"/>
+      <node ref="TP14" pin="1"/>
+      <node ref="U5" pin="11"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="66" name="/Epaper_adapter_sheet/RESET">
+      <node ref="U5" pin="15"/>
+      <node ref="J19" pin="15"/>
+      <node ref="TP22" pin="1"/>
+    </net>
+    <net code="67" name="/Epaper_adapter_sheet/D/C">
+      <node ref="U5" pin="16"/>
+      <node ref="TP21" pin="1"/>
+      <node ref="J19" pin="16"/>
+    </net>
+    <net code="68" name="/Epaper_adapter_sheet/CS">
+      <node ref="U5" pin="17"/>
+      <node ref="J19" pin="17"/>
+      <node ref="TP20" pin="1"/>
+    </net>
+    <net code="69" name="+3V3">
+      <node ref="SC1" pin="1"/>
+      <node ref="J15" pin="2"/>
+      <node ref="J2" pin="2"/>
+      <node ref="J10" pin="1"/>
+      <node ref="TP17" pin="1"/>
+      <node ref="J12" pin="1"/>
+      <node ref="J14" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="J19" pin="20"/>
+      <node ref="J19" pin="21"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C14" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="70" name="/Epaper_adapter_sheet/SCK">
+      <node ref="J19" pin="18"/>
+      <node ref="TP25" pin="1"/>
+      <node ref="U5" pin="13"/>
+    </net>
+    <net code="71" name="/Epaper_adapter_sheet/BUSY">
+      <node ref="J19" pin="14"/>
+      <node ref="TP23" pin="1"/>
+      <node ref="U5" pin="14"/>
+    </net>
+    <net code="72" name="Net-(TP11-Pad1)">
+      <node ref="TP11" pin="1"/>
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="73" name="Net-(C6-Pad1)">
+      <node ref="U3" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="J10" pin="2"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="74" name="Net-(TH1-Pad1)">
+      <node ref="TH1" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="75" name="Net-(J3-Pad1)">
+      <node ref="U1" pin="20"/>
+      <node ref="U1" pin="1"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="76" name="Net-(BT1-Pad1)">
+      <node ref="C4" pin="1"/>
+      <node ref="J4" pin="2"/>
+      <node ref="BT1" pin="1"/>
+    </net>
+    <net code="77" name="Net-(J4-Pad1)">
+      <node ref="U1" pin="14"/>
+      <node ref="U1" pin="15"/>
+      <node ref="J4" pin="1"/>
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="78" name="/LBO">
+      <node ref="U1" pin="8"/>
+      <node ref="TP3" pin="1"/>
+    </net>
+    <net code="79" name="/STATUS2">
+      <node ref="U1" pin="7"/>
+      <node ref="TP2" pin="1"/>
+    </net>
+    <net code="80" name="Net-(J19-Pad34)">
+      <node ref="J19" pin="34"/>
+    </net>
+    <net code="81" name="Net-(J19-Pad33)">
+      <node ref="J19" pin="33"/>
+    </net>
+    <net code="82" name="Net-(J19-Pad32)">
+      <node ref="J19" pin="32"/>
+    </net>
+    <net code="83" name="Net-(J19-Pad31)">
+      <node ref="J19" pin="31"/>
+    </net>
+    <net code="84" name="Net-(J19-Pad30)">
+      <node ref="J19" pin="30"/>
+    </net>
+    <net code="85" name="Net-(J19-Pad6)">
+      <node ref="J19" pin="6"/>
+    </net>
+    <net code="86" name="Net-(J19-Pad5)">
+      <node ref="J19" pin="5"/>
+    </net>
+    <net code="87" name="Net-(J19-Pad4)">
+      <node ref="J19" pin="4"/>
+    </net>
+    <net code="88" name="Net-(J19-Pad3)">
+      <node ref="J19" pin="3"/>
+    </net>
+    <net code="89" name="Net-(J19-Pad2)">
+      <node ref="J19" pin="2"/>
+    </net>
+    <net code="90" name="Net-(J19-Pad1)">
+      <node ref="J19" pin="1"/>
+    </net>
+    <net code="91" name="/Epaper_adapter_sheet/VDD">
+      <node ref="C17" pin="1"/>
+      <node ref="TP29" pin="1"/>
+      <node ref="J19" pin="23"/>
+    </net>
+    <net code="92" name="/Epaper_adapter_sheet/VGL">
+      <node ref="J19" pin="9"/>
+      <node ref="C16" pin="1"/>
+      <node ref="TP28" pin="1"/>
+    </net>
+    <net code="93" name="/Epaper_adapter_sheet/VSH">
+      <node ref="C18" pin="1"/>
+      <node ref="J19" pin="25"/>
+      <node ref="TP30" pin="1"/>
+    </net>
+    <net code="94" name="/Epaper_adapter_sheet/VGH2">
+      <node ref="TP31" pin="1"/>
+      <node ref="J19" pin="26"/>
+      <node ref="C19" pin="1"/>
+    </net>
+    <net code="95" name="/Epaper_adapter_sheet/VSL">
+      <node ref="TP32" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="J19" pin="27"/>
+    </net>
+    <net code="96" name="/Epaper_adapter_sheet/VCOM">
+      <node ref="C21" pin="1"/>
+      <node ref="J19" pin="29"/>
+      <node ref="TP33" pin="1"/>
+    </net>
+    <net code="97" name="/Epaper_adapter_sheet/RESE">
+      <node ref="Q1" pin="3"/>
+      <node ref="R10" pin="1"/>
+      <node ref="TP16" pin="1"/>
+      <node ref="J19" pin="8"/>
+    </net>
+    <net code="98" name="/Epaper_adapter_sheet/VGH">
+      <node ref="C13" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="TP18" pin="1"/>
+      <node ref="J19" pin="10"/>
+    </net>
+    <net code="99" name="/Epaper_adapter_sheet/TSCL">
+      <node ref="J19" pin="11"/>
+    </net>
+    <net code="100" name="/Epaper_adapter_sheet/TSDA">
+      <node ref="J19" pin="12"/>
+    </net>
+    <net code="101" name="/Epaper_adapter_sheet/GDR">
+      <node ref="Q1" pin="1"/>
+      <node ref="J19" pin="7"/>
+      <node ref="TP15" pin="1"/>
+    </net>
+    <net code="102" name="/Epaper_adapter_sheet/VPP">
+      <node ref="TP24" pin="1"/>
+      <node ref="J19" pin="24"/>
+    </net>
+    <net code="103" name="/Epaper_adapter_sheet/PRVGL">
+      <node ref="TP19" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="D4" pin="2"/>
+      <node ref="J19" pin="28"/>
+    </net>
+    <net code="104" name="Net-(C12-Pad1)">
+      <node ref="D3" pin="2"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C12" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="105" name="Net-(C12-Pad2)">
+      <node ref="C12" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+  </nets>
+</export>

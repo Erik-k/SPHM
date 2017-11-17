@@ -621,7 +621,7 @@ U 1 1 59CC61A6
 P 1750 3750
 F 0 "TP22" H 1750 3950 50  0000 C CNN
 F 1 "TEST_1P" H 1750 3950 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 1950 3750 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 1950 3750 50  0001 C CNN
 F 3 "" H 1950 3750 50  0001 C CNN
 	1    1750 3750
 	1    0    0    -1  
@@ -656,7 +656,7 @@ U 1 1 59E046D1
 P 1650 3450
 F 0 "TP20" H 1650 3650 50  0000 C CNN
 F 1 "TEST_1P" H 1650 3650 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 1850 3450 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 1850 3450 50  0001 C CNN
 F 3 "" H 1850 3450 50  0001 C CNN
 	1    1650 3450
 	1    0    0    -1  
@@ -667,7 +667,7 @@ U 1 1 59E0474B
 P 1700 3600
 F 0 "TP21" H 1700 3800 50  0000 C CNN
 F 1 "TEST_1P" H 1700 3800 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 1900 3600 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 1900 3600 50  0001 C CNN
 F 3 "" H 1900 3600 50  0001 C CNN
 	1    1700 3600
 	1    0    0    -1  
@@ -678,7 +678,7 @@ U 1 1 59E04A7A
 P 1800 3900
 F 0 "TP23" H 1800 4100 50  0000 C CNN
 F 1 "TEST_1P" H 1800 4100 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 2000 3900 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 2000 3900 50  0001 C CNN
 F 3 "" H 2000 3900 50  0001 C CNN
 	1    1800 3900
 	1    0    0    -1  
@@ -689,7 +689,7 @@ U 1 1 59E04AD0
 P 1850 4050
 F 0 "TP25" H 1850 4250 50  0000 C CNN
 F 1 "TEST_1P" H 1850 4250 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 2050 4050 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 2050 4050 50  0001 C CNN
 F 3 "" H 2050 4050 50  0001 C CNN
 	1    1850 4050
 	1    0    0    -1  
@@ -700,7 +700,7 @@ U 1 1 59E04B2D
 P 1900 4200
 F 0 "TP26" H 1900 4400 50  0000 C CNN
 F 1 "TEST_1P" H 1900 4400 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 2100 4200 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 2100 4200 50  0001 C CNN
 F 3 "" H 2100 4200 50  0001 C CNN
 	1    1900 4200
 	1    0    0    -1  
@@ -711,7 +711,7 @@ U 1 1 59E05B20
 P 1400 4500
 F 0 "TP27" H 1400 4700 50  0000 C CNN
 F 1 "TEST_1P" H 1400 4700 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 1600 4500 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 1600 4500 50  0001 C CNN
 F 3 "" H 1600 4500 50  0001 C CNN
 	1    1400 4500
 	1    0    0    -1  
@@ -722,7 +722,7 @@ U 1 1 59E4F023
 P 1700 1750
 F 0 "TP17" H 1700 1950 50  0000 C CNN
 F 1 "TEST_1P" H 1700 1950 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 1900 1750 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 1900 1750 50  0001 C CNN
 F 3 "" H 1900 1750 50  0001 C CNN
 	1    1700 1750
 	1    0    0    -1  
@@ -733,7 +733,7 @@ U 1 1 59E8F351
 P 3150 900
 F 0 "TP15" H 3150 1100 50  0000 C CNN
 F 1 "TEST_1P" H 3150 1100 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 3350 900 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 3350 900 50  0001 C CNN
 F 3 "" H 3350 900 50  0001 C CNN
 	1    3150 900 
 	1    0    0    -1  
@@ -744,7 +744,7 @@ U 1 1 59E8F46C
 P 3150 1200
 F 0 "TP16" H 3150 1400 50  0000 C CNN
 F 1 "TEST_1P" H 3150 1400 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 3350 1200 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 3350 1200 50  0001 C CNN
 F 3 "" H 3350 1200 50  0001 C CNN
 	1    3150 1200
 	1    0    0    -1  
@@ -755,7 +755,7 @@ U 1 1 59E8F4DC
 P 3750 1750
 F 0 "TP18" H 3750 1950 50  0000 C CNN
 F 1 "TEST_1P" H 3750 1950 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 3950 1750 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 3950 1750 50  0001 C CNN
 F 3 "" H 3950 1750 50  0001 C CNN
 	1    3750 1750
 	1    0    0    -1  
@@ -766,7 +766,7 @@ U 1 1 59E8F569
 P 3750 2150
 F 0 "TP19" H 3750 2350 50  0000 C CNN
 F 1 "TEST_1P" H 3750 2350 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 3950 2150 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 3950 2150 50  0001 C CNN
 F 3 "" H 3950 2150 50  0001 C CNN
 	1    3750 2150
 	1    0    0    -1  
@@ -777,7 +777,7 @@ U 1 1 59EAAE72
 P 5200 3950
 F 0 "TP24" H 5200 4150 50  0000 C CNN
 F 1 "TEST_1P" H 5200 4150 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 5400 3950 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 5400 3950 50  0001 C CNN
 F 3 "" H 5400 3950 50  0001 C CNN
 	1    5200 3950
 	1    0    0    -1  
@@ -788,7 +788,7 @@ U 1 1 59F570F7
 P 1250 6300
 F 0 "TP28" H 1250 6500 50  0000 C CNN
 F 1 "TEST_1P" H 1250 6500 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 1450 6300 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 1450 6300 50  0001 C CNN
 F 3 "" H 1450 6300 50  0001 C CNN
 	1    1250 6300
 	1    0    0    -1  
@@ -799,7 +799,7 @@ U 1 1 59F571F7
 P 1650 6300
 F 0 "TP29" H 1650 6500 50  0000 C CNN
 F 1 "TEST_1P" H 1650 6500 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 1850 6300 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 1850 6300 50  0001 C CNN
 F 3 "" H 1850 6300 50  0001 C CNN
 	1    1650 6300
 	1    0    0    -1  
@@ -810,7 +810,7 @@ U 1 1 59F57276
 P 2050 6300
 F 0 "TP30" H 2050 6500 50  0000 C CNN
 F 1 "TEST_1P" H 2050 6500 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 2250 6300 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 2250 6300 50  0001 C CNN
 F 3 "" H 2250 6300 50  0001 C CNN
 	1    2050 6300
 	1    0    0    -1  
@@ -821,7 +821,7 @@ U 1 1 59F572F8
 P 2450 6300
 F 0 "TP31" H 2450 6500 50  0000 C CNN
 F 1 "TEST_1P" H 2450 6500 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 2650 6300 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 2650 6300 50  0001 C CNN
 F 3 "" H 2650 6300 50  0001 C CNN
 	1    2450 6300
 	1    0    0    -1  
@@ -832,7 +832,7 @@ U 1 1 59F5737D
 P 2800 6300
 F 0 "TP32" H 2800 6500 50  0000 C CNN
 F 1 "TEST_1P" H 2800 6500 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 3000 6300 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 3000 6300 50  0001 C CNN
 F 3 "" H 3000 6300 50  0001 C CNN
 	1    2800 6300
 	1    0    0    -1  
@@ -843,7 +843,7 @@ U 1 1 59F57403
 P 3150 6300
 F 0 "TP33" H 3150 6500 50  0000 C CNN
 F 1 "TEST_1P" H 3150 6500 50  0001 C CNN
-F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 3350 6300 50  0001 C CNN
+F 2 "CustomFootprints:TestPointHole" H 3350 6300 50  0001 C CNN
 F 3 "" H 3350 6300 50  0001 C CNN
 	1    3150 6300
 	1    0    0    -1  
